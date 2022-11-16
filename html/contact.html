@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../img/brand/avon-care-icon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../img/brand/avon-care-logo.png" alt="AVON Logo">
+                </a>
+            </div>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Welcome</a></li>
+                        <li><a href="./collection-discover.html">Discover</a></li>
+                        <li><a href="./collection-discover.html">Shop</a>
+                            <ul>
+                                <li><a href="./collection-avocado.html">Avocado</a></li>
+                                <li><a href="#">Cocoa</a></li>
+                                <li><a href="#">Coconut</a></li>
+                                <li><a href="#">Cucumber</a></li>
+                                <li><a href="#">Pomegranate</a></li>
+                                <li><a href="#">Vanilla</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="contact">
+        <section class="page-title">
+            <div class="page-title-text">
+                <h1 class="animate__animated animate__pulse">Need help? Talk to us!</h1>
+            </div>
+            <div class="page-title-scroll-down">
+                <img src="../img/brand/scroll-down.png" alt="">
+            </div>
+        </section>
+        <section>
+            <form class="contact-grid" action="enviar.php" method="get">
+                <div class="contact-grid-name rule-frame">
+                    <input type="text" id="name" placeholder="Your first and last name" required>
+                </div>
+                <div class="contact-grid-email rule-frame">
+                    <input type="email" id="email" placeholder="Your email address" required>                     
+                </div>
+                <div class="contact-grid-reason rule-frame">
+                    <select name="reason" id="reason">
+                        <option value="del">Why are you contacting us?</option>
+                        <option value="del">Delivery</option>
+                        <option value="ret">Returns</option>
+                        <option value="pay">Payment</option>
+                        <option value="pro">Product information</option>
+                    </select>                        
+                </div>
+                <div class="contact-grid-message rule-frame">
+                    <textarea name="message" id="message" placeholder="Your message"></textarea required>                        
+                </div>
+                <div class="contact-grid-button rule-button">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+        <section class="back-to-welcome rule-button">
+            <a href="../index.html">← Back to Welcome</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-social-media">
+            <h2><a href="https://www.instagram.com/avon_uk/">Instagram</a></h2>
+            <h2><a href="https://www.tiktok.com/@avon_uk">Tik Tok</a></h2>
+            <h2><a href="https://www.youtube.com/user/iAvonUK">YouTube</a></h2>
+        </div>
+        <div class="footer-copyright">
+            <p>© Avon Cosmetics, 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

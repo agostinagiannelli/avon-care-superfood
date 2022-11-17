@@ -5,6 +5,9 @@
     font-family: 'Epilogue', sans-serif;
     scroll-behavior: smooth;
 }
+main {
+    overflow: hidden;
+}
 
 /* animations */
 
@@ -310,7 +313,7 @@ header {
 /* bestsellers carousel */
 
 .bestseller-carousel {
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     max-width: 1400px;
     padding: 100px 0;
@@ -367,7 +370,7 @@ header {
 /* collection list */
 
 .collection-list {
-    margin: 0 auto;
+    margin: 30px auto;
     width: 100%;
     max-width: 1400px;
     display: grid;
@@ -460,13 +463,14 @@ header {
 /* rotate banner */
 
 .rotate-banner {
-    transform: rotate(-3deg);
-    margin: 60px auto;
+    transform: rotate(-2deg);
+    margin: 100px 0;
     width: 100%;
     background-color: #FDF7FA;
     display: flex;
     justify-content: center;
     box-shadow: 0 0 12px 6px rgb(0 0 0 / 6%);
+    overflow-x: hidden;
 }
 .rotate-banner-text {
     max-width: 900px;
@@ -712,7 +716,7 @@ header {
 
 .back-to-welcome {
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     padding: 50px;
     height: 100%;
     text-align: center;

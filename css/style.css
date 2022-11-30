@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
     font-family: 'Epilogue', sans-serif;
     scroll-behavior: smooth;
-}
-main {
-    overflow: hidden;
 }
 
 /* animations */
@@ -463,16 +462,17 @@ header {
 /* rotate banner */
 
 .rotate-banner {
-    transform: rotate(-2deg);
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+    -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+    -moz-clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
     margin: 100px 0;
     width: 100%;
-    background-color: #FDF7FA;
+    background-image: url(../img/brand/avon-gradient.jpg);
     display: flex;
     justify-content: center;
-    box-shadow: 0 0 12px 6px rgb(0 0 0 / 6%);
-    overflow-x: hidden;
 }
 .rotate-banner-text {
+    color: white;
     max-width: 900px;
     text-align: center;
     padding: 80px 0;

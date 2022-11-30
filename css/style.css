@@ -41,7 +41,7 @@ ul a:after, h2 a:after, a p:after, h3 a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background-image: url(../img/brand/avon-gradient.jpg);
+    background-image: url(../images/brand/avon-gradient.jpg);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -467,7 +467,7 @@ header {
     -moz-clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
     margin: 100px 0;
     width: 100%;
-    background-image: url(../img/brand/avon-gradient.jpg);
+    background-image: url(../images/brand/avon-gradient.jpg);
     display: flex;
     justify-content: center;
 }
@@ -479,7 +479,7 @@ header {
 }
 @media (max-width: 768px) {
     .rotate-banner-text {
-        padding: 40px;
+        padding: 60px;
     }
     .rotate-banner-text h4 {
         font-size: 24px;
@@ -551,6 +551,13 @@ header {
 
 /* product detail list */
 
+.product-detail-info-breadcrumbs {
+    font-size: 14px;
+}
+.product-detail-info-breadcrumbs a {
+    color: black;
+    text-decoration-line: none;
+}
 .product-detail-info {
     display: flex;
     flex-direction: column;
@@ -600,7 +607,7 @@ header {
 /* contact */
 
 .contact {
-    background-image: url(../img/brand/avon-background.jpg);
+    background-image: url(../images/brand/avon-background.jpg);
     background-size: cover;
 }
 

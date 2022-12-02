@@ -1,0 +1,122 @@
+/* responsive */
+
+@media (min-width: $tablet) {
+    .header-mobile {
+        display: none;
+}
+}
+@media (max-width: $tablet) {
+    .header-desktop {
+        display: none;
+    }
+    .page-title {
+        padding: 40px;
+    }
+    .page-title h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .collection-grid {
+        padding: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .bestseller-carousel {
+        padding: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 40px;
+        &__item {
+            width: 50%;
+        }
+    }
+    .collection-list {
+        padding: 40px;
+        &__item {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.2fr 0.2fr;
+            gap: 10px;
+            & p {
+                padding: 0 30px;
+                text-align: center;
+            }
+            & h2 {
+                padding: 30px;
+                text-align: center;
+            }
+            &--divider {
+                display: none;
+            }
+        }
+    }
+    .product-grid {
+        width: 80%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    .tilted-banner__text {
+        padding: 60px;
+        & h4 {
+            font-size: 24px;
+        }
+    }
+    .product-detail {
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        &__images {
+            flex-direction: column-reverse;
+            margin: 0 40px;
+            &--small {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                & img {
+                    display: none;
+                }
+            }
+            &--main {
+                width: 100%;
+                text-align: center;
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .product-detail__info {
+        padding: 40px;
+        text-align: center;
+        &__variant {
+            justify-content: center
+        }
+    }
+    .contact-grid {
+        padding: 40px;
+        grid-template-areas:
+        "name name"
+        "email email"
+        "reason reason"
+        "message message"
+        "button button"
+        ;
+        gap: 10px;
+    }
+    .video {
+        padding: 40px;
+    }
+    .slider {
+        height: 400px;
+        & img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .newsletter-grid form {
+        flex-direction: column;
+    }
+    footer {
+        padding: 40px;
+    }
+}

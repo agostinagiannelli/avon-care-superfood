@@ -1,0 +1,59 @@
+/* animated underline */
+
+ul a, h2 a, a p, h3 a {
+    color: $darkColour;
+    text-decoration: none;
+    position: relative;
+    &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background-image: $gradient;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    &:hover:after {
+        width: 100%; 
+        left: 0;
+    } 
+}
+
+/* rules */
+
+.button {
+    color: $darkColour;
+    background-color: $lightColour;
+    transition: $transition;
+    border: $borderLine;
+    border: {
+        radius: 6px;
+        color: $darkColour;
+    }
+    &:hover {
+        color: $lightColour;
+        background-color: $mainColour;
+    }
+}
+.rounded-image {
+    border-radius: 50%;
+    transition: $transition;
+    &:hover {
+        transform: scale(1.05);
+        opacity: 80%;
+    }
+}
+@mixin frame {
+    color: $darkColour;
+    background-color: $lightColour;
+    border: $borderLine;
+    border-radius: 6px;
+}
+
+@mixin card {
+    border-radius: 15px;
+    box-shadow: $shadow;
+}

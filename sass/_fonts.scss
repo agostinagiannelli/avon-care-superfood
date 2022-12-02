@@ -1,0 +1,40 @@
+/* fonts */
+
+h1 {
+    font: {
+        size: 90px;
+        weight: 800;
+    }
+}
+h2 {
+    font: {
+        size: 24px;
+        weight: 800;
+    }
+}
+h3 {
+    font: {
+        size: 16px;
+        weight: 600;
+    }
+}
+h4 {
+    font: {
+        size: 30px;
+        weight: 600;
+    }
+}
+a {
+    font: {
+        size: 16px;
+        weight: 800;
+    }
+    text-decoration-line: none;
+    color: $darkColour;
+}
+p, input, select, textarea {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+}

@@ -1,0 +1,26 @@
+/* footer */
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    &__social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & a {
+            font: {
+                size: 24px;
+                weight: 800;
+            }
+        }
+    }
+    &__copyright {
+        font-size: 14px;
+    }
+}

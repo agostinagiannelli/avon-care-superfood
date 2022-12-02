@@ -8,21 +8,21 @@
     <meta name="keywords" content="beauty, body care, hand cream, body lotion, body wash, moisturiser, recyclable, skincare">
     <meta name="description" content="Shop the Avon Care Superfood collection with nourishing food ingredients and beautiful scents. 48-hour, long-lasting moisturisation guaranteed.">
     <link rel="shortcut icon" href="./images/brand/avon-care-black-icon.png">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="header-mobile">
             <div class="header-logo">
                 <a href="./index.html">
                     <img src="./images/brand/avon-care-logo.png" alt="Avon Care Logo">
                 </a>
             </div>
-            <div class="hamburger-menu">
+            <div class="header-mobile__menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
                     <span></span>
@@ -42,7 +42,7 @@
                     <img src="./images/brand/avon-care-logo.png" alt="Avon Care Logo">
                 </a>
             </div>
-            <div class="header-menu">
+            <div class="header-desktop__menu">
                 <nav>
                     <ul>
                         <li><a href="./index.html">Welcome</a></li>
@@ -64,82 +64,82 @@
         </section>
     </header>
         <section class="page-title">
-            <div class="page-title-text">
+            <div class="page-title__text">
                 <h1 class="animate__animated animate__pulse">Welcome. Meet your skin's new favourite brand.</h1>
             </div>
-            <div class="page-title-scroll-down">
+            <div class="page-title__scroll-icon">
                 <a href="#scroll"><img src="./images/brand/scroll-down.png" alt="Scroll Icon"></a>
             </div>
         </section>
     <main>
-        <section class="rotate-banner" id="scroll">
-            <div class="rotate-banner-text">
+        <section class="tilted-banner" id="scroll">
+            <div class="tilted-banner__text">
                 <h4>Discover the Avon Care Superfood ranges.</h4>
                 <h4>48-hour, long-lasting moisturisation guaranteed. 🤩</h4>
             </div>
         </section>
         <section class="collection-grid">
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="./pages/collection-avocado.html">
                     <img src="./images/collection-grid/collection-grid-avocado.jpg" alt="Avocado Collection">
                 </a>
             </div>
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="#">
                     <img src="./images/collection-grid/collection-grid-cocoa.jpg" alt="Cocoa Collection">
                 </a>
             </div>
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="#">
                     <img src="./images/collection-grid/collection-grid-coconut.jpg" alt="Coconut Collection">
                 </a>
             </div>
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="#">
                     <img src="./images/collection-grid/collection-grid-cucumber.jpg" alt="Cucumber Collection">
                 </a>
             </div>
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="#">
                     <img src="./images/collection-grid/collection-grid-pomegranate.jpg" alt="Pomegranate Collection">
                 </a>
             </div>
-            <div class="collection-grid-item rule-rounded-image">
+            <div class="collection-grid__item">
                 <a href="#">
                     <img src="./images/collection-grid/collection-grid-vanilla.jpg" alt="Vanilla Collection">
                 </a>
             </div>
         </section>
         <section class="bestseller-carousel">
-            <div class="bestseller-carousel-title rule-button">
+            <div class="bestseller-carousel__title">
                 <h2>Bestsellers</h2>
                 <a href="./pages/collection-discover.html">Shop All</a>
             </div>
-            <div class="bestseller-carousel-item rule-rounded-image">
+            <div class="bestseller-carousel__item">
                 <a href="./pages/product-avocado-body-lotion.html">
                     <img src="./images/product/avocado-body-lotion-720ml.jpg" alt="Avocado Body Lotion 720ml">
                     <p>Avocado Body Lotion</p>
                 </a>
             </div>
-            <div class="bestseller-carousel-item rule-rounded-image">
+            <div class="bestseller-carousel__item">
                 <a href="#">
                     <img src="./images/product/cocoa-hand-cream-75ml.jpg" alt="Cocoa Hand Cream 75ml">
                     <p>Cocoa Hand Cream</p>
                 </a>
             </div>
-            <div class="bestseller-carousel-item rule-rounded-image">
+            <div class="bestseller-carousel__item">
                 <a href="#">
                     <img src="./images/product/cucumber-body-lotion-400ml.jpg" alt="Cucumber Body Lotion 400ml">
                     <p>Cucumber Body Lotion</p>
                 </a>
             </div>
-            <div class="bestseller-carousel-item rule-rounded-image">
+            <div class="bestseller-carousel__item">
                 <a href="#">
                     <img src="./images/product/vanilla-multipurpose-cream-400ml.jpg" alt="Vanilla Multipurpose Cream 400ml">
                     <p>Vanilla Multipurpose Cream</p>
                 </a>
             </div>
-            <div class="bestseller-carousel-item rule-rounded-image">
+            <div class="bestseller-carousel__item">
                 <a href="#">
                     <img src="./images/product/pomegranate-hand-cream-75ml.jpg" alt="Pomegranate Hand Cream 75ml">
                     <p>Pomegranate Hand Cream</p>
@@ -152,23 +152,23 @@
             </div>
             <div class="newsletter-grid">
                 <form action="enviar.php" method="get">
-                    <div class="newsletter-grid-email rule-frame">
+                    <div class="newsletter-grid__email">
                         <input type="email" id="mail" placeholder="Enter your email" required>
                     </div>
-                    <div class="newsletter-grid-button rule-button">
+                    <div class="newsletter-grid__button">
                         <input type="submit" value="Subscribe">
                     </div>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-social-media">
+    <footer class="footer">
+        <div class="footer__social-media">
             <h2><a href="https://www.instagram.com/avon_uk/">Instagram</a></h2>
             <h2><a href="https://www.tiktok.com/@avon_uk">Tik Tok</a></h2>
             <h2><a href="https://www.youtube.com/user/iAvonUK">YouTube</a></h2>
         </div>
-        <div class="footer-copyright">
+        <div class="footer__copyright">
             <p>© Avon Cosmetics, 2022</p>
         </div>
     </footer>

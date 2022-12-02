@@ -8,21 +8,21 @@
     <meta name="keywords" content="beauty, body care, hand cream, body lotion, body wash, moisturiser, recyclable, skincare">
     <meta name="description" content="Got a question or need some help? Get in touch today and we'll do our best to help resolve any issues.">
     <link rel="shortcut icon" href="../images/brand/avon-care-black-icon.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="header-mobile">
             <div class="header-logo">
                 <a href="../index.html">
                     <img src="../images/brand/avon-care-logo.png" alt="Avon Care Logo">
                 </a>
             </div>
-            <div class="hamburger-menu">
+            <div class="header-mobile__menu">
                 <input id="menu__toggle" type="checkbox" />
                 <label class="menu__btn" for="menu__toggle">
                     <span></span>
@@ -42,7 +42,7 @@
                     <img src="../images/brand/avon-care-logo.png" alt="Avon Care Logo">
                 </a>
             </div>
-            <div class="header-menu">
+            <div class="header-desktop__menu">
                 <nav>
                     <ul>
                         <li><a href="../index.html">Welcome</a></li>
@@ -65,22 +65,22 @@
     </header>
     <main class="contact">
         <section class="page-title">
-            <div class="page-title-text">
+            <div class="page-title__text">
                 <h1 class="animate__animated animate__pulse">Need help? Talk to us!</h1>
             </div>
-            <div class="page-title-scroll-down">
+            <div class="page-title__scroll-icon">
                 <a href="#scroll"><img src="../images/brand/scroll-down.png" alt="Scroll Icon"></a>
             </div>
         </section>
         <section id="scroll">
             <form class="contact-grid" action="enviar.php" method="get">
-                <div class="contact-grid-name rule-frame">
+                <div class="contact-grid__name">
                     <input type="text" id="name" placeholder="Your first and last name" required>
                 </div>
-                <div class="contact-grid-email rule-frame">
+                <div class="contact-grid__email">
                     <input type="email" id="email" placeholder="Your email address" required>                     
                 </div>
-                <div class="contact-grid-reason rule-frame">
+                <div class="contact-grid__reason">
                     <select name="reason" id="reason">
                         <option value="del">Why are you contacting us?</option>
                         <option value="del">Delivery</option>
@@ -89,25 +89,25 @@
                         <option value="pro">Product information</option>
                     </select>                        
                 </div>
-                <div class="contact-grid-message rule-frame">
+                <div class="contact-grid__message">
                     <textarea name="message" id="message" placeholder="Your message"></textarea required>                        
                 </div>
-                <div class="contact-grid-button rule-button">
+                <div class="contact-grid__button">
                     <input type="submit" value="Send">
                 </div>
             </form>
         </section>
-        <section class="back-to-welcome rule-button">
+        <section class="back-to-welcome">
             <a href="../index.html">← Back to Welcome</a>
         </section>
     </main>
-    <footer>
-        <div class="footer-social-media">
+    <footer class="footer">
+        <div class="footer__social-media">
             <h2><a href="https://www.instagram.com/avon_uk/">Instagram</a></h2>
             <h2><a href="https://www.tiktok.com/@avon_uk">Tik Tok</a></h2>
             <h2><a href="https://www.youtube.com/user/iAvonUK">YouTube</a></h2>
         </div>
-        <div class="footer-copyright">
+        <div class="footer__copyright">
             <p>© Avon Cosmetics, 2022</p>
         </div>
     </footer>

@@ -346,6 +346,7 @@ ul a:hover:after, h2 a:hover:after, a p:hover:after, h3 a:hover:after {
 /* product grid */
 .product-grid {
   margin: 0 auto;
+  padding-bottom: 60px;
   width: 100%;
   max-width: 1400px;
   display: grid;
